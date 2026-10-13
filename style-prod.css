@@ -206,7 +206,8 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 .s-vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .s-bar__logo { height: 44px; width: auto; flex: none; mix-blend-mode: multiply; }
 .s-hero h1 { hyphens: manual; text-wrap: balance; } /* без переносов слов в заголовке – правка Винеры 12.10.2026 */
-.s-bar__brand { font-size: 1.45rem; } /* название в шапке крупнее – правка Винеры 13.10.2026 */
-@media (max-width: 720px) { .s-bar__brand { font-size: 1.1rem; } }
+.s-bar__brand { font-size: 1.8rem; letter-spacing: -.01em; } /* название в шапке – лицо сайта, крупно; правка Винеры 13.10.2026 */
+.s-bar__brand i { display: none; } /* шаблонный кружок убран на всех сайтах – правка Винеры 13.10.2026 */
+@media (max-width: 720px) { .s-bar__brand { font-size: 1.3rem; } }
 @media (max-width: 420px) { .s-bar__brand { white-space: normal; line-height: 1.1; overflow: visible; } .s-bar__brand i { flex: none; } } /* длинное название – в две строки, а не обрезать */
 @media (max-width: 720px) { .s-bar__logo { height: 34px; } }
